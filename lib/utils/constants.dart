@@ -32,3 +32,4 @@ const kPrimaryColor = Color(0XFFFF4522);
 const kSecondaryColor = Color(0XFF2B224B);
 const kTextColor = Color(0XFF282828);
 const defaultDuration = Duration(seconds: 1);
+const background = Color(0xFF242430);

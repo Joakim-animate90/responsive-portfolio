@@ -18,7 +18,7 @@ class PortfolioEngine extends StatelessWidget{
 
     final ThemeData globalTheme = Provider.of<GlobalTheme>(context).globalTheme;
     return MaterialApp(
-      title: 'Ant Investor',
+      title: 'Kim Portfolio',
       //initialRoute: '/',
       theme: globalTheme,
       home: FlowBuilder<AuthenticationState>(

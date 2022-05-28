@@ -51,7 +51,7 @@ class StateNavigationExplore extends NavigationState{
 class NavigationBloc extends Bloc<NavigationEvent, NavigationState>{
   NavigationBloc():super(const StateNavigationAbout()){
     on<NavigationEventExplore>((event, emit) => emit(const StateNavigationExplore()));
-    on<NavigationEventExplore>((event, emit) => emit(const StateNavigationExplore()));
+    on<NavigationEventViewCv>((event, emit) => emit(const StateNavigationViewCv()));
   }
 
 }

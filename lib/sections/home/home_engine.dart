@@ -1,5 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:res_portfolio/sections/home/view_mobile.dart';
+import 'package:res_portfolio/sections/home/view_tablet.dart';
+import 'package:res_portfolio/sections/home/view_web.dart';
 
 import '../../utils/custom_responsive.dart';
 
@@ -12,6 +15,6 @@ class HomeEngine extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomResponsive(
-      desktop: HomeViewWeb(), mobile: HomeViewMobile(), tablet:HomeViewTablet(), key: null,);
+      desktop: const HomeViewWeb(), mobile: HomeViewMobile(), tablet:const HomeViewTablet(), key: null,);
   }
 }
