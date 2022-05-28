@@ -3,6 +3,8 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 
+import '../../components/empty_card.dart';
+
 
 
 class AboutScreen extends StatefulWidget {
@@ -30,9 +32,9 @@ class _AboutScreenState extends State<AboutScreen> {
                     child: FadeInAnimation(child: widget),
                   ),
                   children: [
-                    EmptyCard(
+                    EmptyCardAbout(
                       width: MediaQuery.of(context).size.width,
-                      height: 166.0,
+                      height: 300.0,
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 8.0),
