@@ -1,3 +1,10 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+import '../utils/constants.dart';
+import 'animated_circular_indicator.dart';
+
 class Skills extends StatelessWidget {
   const Skills({
     Key? key,
@@ -8,16 +15,17 @@ class Skills extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Divider(),
-        Padding(
-          padding: const EdgeInsets.symmetric(vertical: defaultPadding),
+        const Divider(),
+         Padding(
+          padding: const EdgeInsets.all(defaultPadding),
           child: Text(
             "Skills",
-            style: Theme.of(context).textTheme.subtitle2,
+            style: GoogleFonts.acme(textStyle: const TextStyle(fontSize: 22, color: black)),
+
           ),
         ),
         Row(
-          children: [
+          children:const [
             Expanded(
               child: AnimatedCircularProgressIndicator(
                 percentage: 0.8,
@@ -27,14 +35,14 @@ class Skills extends StatelessWidget {
             SizedBox(width: defaultPadding),
             Expanded(
               child: AnimatedCircularProgressIndicator(
-                percentage: 0.72,
+                percentage: 0.80,
                 label: "Django",
               ),
             ),
             SizedBox(width: defaultPadding),
             Expanded(
               child: AnimatedCircularProgressIndicator(
-                percentage: 0.65,
+                percentage: 0.75,
                 label: "Firebase",
               ),
             ),

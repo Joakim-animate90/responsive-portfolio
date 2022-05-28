@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../utils/constants.dart';
 
@@ -27,7 +28,7 @@ class AnimatedLinearProgressIndicator extends StatelessWidget {
               children: [
                 Text(
                   label,
-                  style: const TextStyle(color: black),
+                  style: GoogleFonts.acme(textStyle: const TextStyle(fontSize: 13, color: black)),
                 ),
                 Text("${(value * 100).toInt()}%"),
               ],
@@ -35,7 +36,7 @@ class AnimatedLinearProgressIndicator extends StatelessWidget {
             const SizedBox(height: defaultPadding / 2),
             LinearProgressIndicator(
               value: value,
-              color: primaryColor,
+              color: green,
               backgroundColor: customSurfaceWhite,
             ),
           ],

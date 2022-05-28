@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:res_portfolio/components/linear_coding_skills.dart';
+import 'package:res_portfolio/components/my_skill.dart';
 import 'package:res_portfolio/utils/constants.dart';
 
 import '../utils/custom_responsive.dart';
@@ -87,6 +89,66 @@ class EmptyCardAbout extends StatelessWidget {
     );
   }
 }
+class EmptyCardSkills extends StatelessWidget {
+  final double? width;
+  final double? height;
+
+  const EmptyCardSkills({
+    Key? key,
+    this.width,
+    this.height,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+
+        width: width,
+        height: height,
+        margin: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 8.0),
+    decoration: const BoxDecoration(
+    //color: background,
+    borderRadius: BorderRadius.all(Radius.circular(4.0)),
+    boxShadow: <BoxShadow>[
+    BoxShadow(
+    color: customSurfaceWhite,
+    blurRadius: 8.0,
+    offset: Offset(0.0, 4.0),
+    ),
+    ],
+    ),
+      child:const Skills(),
+    );}}
+class EmptyCardLinear extends StatelessWidget {
+  final double? width;
+  final double? height;
+
+  const EmptyCardLinear({
+    Key? key,
+    this.width,
+    this.height,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: width,
+      height: height,
+      margin: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 8.0),
+      decoration: const BoxDecoration(
+        //color: background,
+        borderRadius: BorderRadius.all(Radius.circular(4.0)),
+        boxShadow: <BoxShadow>[
+          BoxShadow(
+            color: customSurfaceWhite,
+            blurRadius: 4.0,
+            offset: Offset(0.0, 4.0),
+          ),
+        ],
+      ),
+      child: const LinearCodingSkills(),
+
+    );}}
 class EmptyCard extends StatelessWidget {
   final double? width;
   final double? height;
@@ -100,19 +162,19 @@ class EmptyCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        width: width,
-        height: height,
-        margin: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 8.0),
-    decoration: const BoxDecoration(
-    //color: background,
-    borderRadius: BorderRadius.all(Radius.circular(4.0)),
-    boxShadow: <BoxShadow>[
-    BoxShadow(
-    color: Colors.black12,
-    blurRadius: 4.0,
-    offset: Offset(0.0, 4.0),
-    ),
-    ],
-    ),
-      child:,
+      width: width,
+      height: height,
+      margin: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 8.0),
+      decoration: const BoxDecoration(
+        //color: background,
+        borderRadius: BorderRadius.all(Radius.circular(4.0)),
+        boxShadow: <BoxShadow>[
+          BoxShadow(
+            color: Colors.black12,
+            blurRadius: 4.0,
+            offset: Offset(0.0, 4.0),
+          ),
+        ],
+      ),
+
     );}}

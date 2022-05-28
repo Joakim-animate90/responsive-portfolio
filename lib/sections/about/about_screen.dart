@@ -29,28 +29,28 @@ class _AboutScreenState extends State<AboutScreen> {
                   duration: const Duration(milliseconds: 375),
                   childAnimationBuilder: (widget) => SlideAnimation(
                     horizontalOffset: MediaQuery.of(context).size.width / 2,
-                    child: FadeInAnimation(child: widget),
+                    child: FadeInAnimation(delay:const Duration(milliseconds: 150),curve: Curves.easeInOutCubicEmphasized, child: widget),
                   ),
                   children: [
                     EmptyCardAbout(
                       width: MediaQuery.of(context).size.width,
                       height: 300.0,
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 8.0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: const [
-                          EmptyCard(height: 50.0, width: 50.0),
-                          EmptyCard(height: 50.0, width: 50.0),
-                          EmptyCard(height: 50.0, width: 50.0),
-                        ],
-                      ),
-                    ),
+                    // Padding(
+                    //   padding: const EdgeInsets.symmetric(vertical: 8.0),
+                    //   child: Row(
+                    //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    //     children: const [
+                    //       EmptyCard(height: 50.0, width: 50.0),
+                    //       EmptyCard(height: 50.0, width: 50.0),
+                    //       EmptyCard(height: 50.0, width: 50.0),
+                    //     ],
+                    //   ),
+                    // ),
                     Row(
                       children: const [
-                        Flexible(child: EmptyCard(height: 150.0)),
-                        Flexible(child: EmptyCard(height: 150.0)),
+                        Flexible(child: EmptyCardSkills(height: 300.0)),
+                        Flexible(child: EmptyCardLinear(height: 300.0)),
                       ],
                     ),
                     Padding(
