@@ -18,7 +18,7 @@ class MyProfile extends StatelessWidget {
             const Spacer(flex: 2),
             const CircleAvatar(
 
-             foregroundColor: customSurfaceWhite,
+
               radius: 50,
               foregroundImage: AssetImage("assets/images/wolf.png"),
             ),

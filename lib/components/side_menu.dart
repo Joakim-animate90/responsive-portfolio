@@ -36,7 +36,7 @@ class SideMenu extends StatelessWidget {
                             const Text(
                               "About Me",
                               style: TextStyle(
-                                color:customSurfaceWhite
+                                color:primaryColor
                               ),
                             ),
                             const SizedBox(width: defaultPadding / 2),
@@ -57,10 +57,10 @@ class SideMenu extends StatelessWidget {
                             const Text(
                               "Certifications",
                               style: TextStyle(
-                                  color:customSurfaceWhite
+                                  color:primaryColor
                               ),
                             ),
-                            const SizedBox(width: defaultPadding / 2),
+                            const SizedBox(width: defaultPadding),
                             SvgPicture.asset("")
                           ],
                         ),
@@ -78,7 +78,7 @@ class SideMenu extends StatelessWidget {
                             const Text(
                               "My Projects",
                               style: TextStyle(
-                                  color:customSurfaceWhite
+                                  color:primaryColor
                               ),
                             ),
                             const SizedBox(width: defaultPadding / 2),
@@ -99,7 +99,7 @@ class SideMenu extends StatelessWidget {
                             const Text(
                               "DOWNLOAD CV",
                               style: TextStyle(
-                                color: customSurfaceWhite
+                                color: primaryColor
                               ),
                             ),
                             const SizedBox(width: defaultPadding ),
@@ -111,7 +111,7 @@ class SideMenu extends StatelessWidget {
                     ),
                     Container(
                       margin: const EdgeInsets.only(top: defaultPadding),
-                      color: customSurfaceWhite,
+                      color: background,
                       child: Row(
                         children: [
                           const Spacer(),
