@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 import '../authentication/authentication_bloc.dart';
-import '../constants.dart';
+import '../utils/constants.dart';
 
 class ChasingDots extends StatelessWidget{
   const   ChasingDots({Key? key}) : super(key: key);

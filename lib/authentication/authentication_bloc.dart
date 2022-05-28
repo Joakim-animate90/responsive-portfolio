@@ -56,7 +56,9 @@ class AuthenticationBloc extends Bloc<AuthenticationEvent, AuthenticationState> 
   void _onEventSuccess(
       AuthenticationEvntSuccess event, Emitter<AuthenticationState> emit) async {
     try {
+      print("state partition loading");
       emit(const StateAuthenticationLoading());
+      print("state partition success");
       emit(const StateAuthenticationSuccess());
     } catch (e) {
       print(e);
